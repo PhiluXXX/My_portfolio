@@ -202,6 +202,17 @@
                 <h2>Philip Schäfer</h1>
                 <b>M.Sc. Entwicklung, Produktion und Management im Maschinenbau (TUM)</b>
                 <br> <br>
+                <span id="multipleStrings"></span>
+
+                <!-- The script itself, loaded AFTER your root element. -->
+                <script src="https://unpkg.com/typeit@@{TYPEIT_VERSION}/dist/index.umd.js"></script>
+                <script>
+                  new TypeIt("#multipleStrings", {
+                    strings: ["This is a great string.", "But here is a better one."],
+                    speed: 50,
+                    waitUntilVisible: true,
+                  }).go();
+                </script>
                 <p>Willkommen in meinem Portfolio! <br>
                 Hier erfahren Sie mehr über mich sowie meine Projekte.</p>
               </div>
@@ -225,8 +236,8 @@
               <img class="bd-placeholder-img" height="100%" src="images\bus_outside_new.png" alt="">
               <div class="container">
                 <div class="carousel-caption">
-                  <h1><span class="badge bg-secondary">VR-Prototyping</span></h1>
-                  <p><span class="badge bg-secondary">Effiziente & nutzerzentrierte Evaluierung von Fahrzeugkonzepten</span></p>
+                  <h1><span class="badge bg-secondary opacity-75">VR-Prototyping</span></h1>
+                  <p><span class="badge bg-secondary opacity-75">Effiziente & nutzerzentrierte Evaluierung von Fahrzeugkonzepten</span></p>
                   <p><a class="btn btn-md btn-primary" href="#" onClick="document.getElementById('first_feature').scrollIntoView();">Mehr hierzu</a></p>
                 </div>
               </div>
@@ -237,28 +248,28 @@
               <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
               <div class="container">
                 <div class="carousel-caption">
-                  <h1 class="text-dark" >Healthcare Innovation</h1>
-                  <p class="text-dark">Gamifizierung von Physio-Training</p>
+                  <h1><span class="badge bg-secondary opacity-75">Healthcare Innovation</span></h1>
+                  <p><span class="badge bg-secondary opacity-75">Gamifizierung von Physio-Training</span></p>
                   <p><a class="btn btn-md btn-primary" href="#" onClick="document.getElementById('second_feature').scrollIntoView();">Mehr hierzu</a></p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+              <img class="bd-placeholder-img" height="100%" src="images\Flux2.png" alt="">
               <div class="container">
-                <div class="carousel-caption text-end">
-                  <h1>One more for good measure.</h1>
-                  <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <div class="carousel-caption">
+                  <h1><span class="badge bg-secondary opacity-75">Web-App</span></h1>
+                  <p><span class="badge bg-secondary opacity-75">zur Analyse des Fluktuations-Risikomanagements in KMUs</span></p>
                   <p><a class="btn btn-md btn-primary" href="#" onClick="document.getElementById('third_feature').scrollIntoView();">Mehr hierzu</a></p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+              <img class="bd-placeholder-img" height="100%" src="images\AssemblX.png" alt="">
               <div class="container">
-                <div class="carousel-caption text-end">
-                  <h1>One more for good measure.</h1>
-                  <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <div class="carousel-caption">
+                  <h1><span class="badge bg-secondary opacity-75">Montageautomatisierung</span></h1>
+                  <p><span class="badge bg-secondary opacity-75">Entwicklung eines (Montage-) Assistenzsystems</span></p>
                   <p><a class="btn btn-md btn-primary" href="#" onClick="document.getElementById('fourth_feature').scrollIntoView();">Mehr hierzu</a></p>
                 </div>
               </div>
@@ -288,12 +299,21 @@
 
     <div id="first_feature" class="row featurette">
       <div class="col-md-7">
-        <h2>First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci iure rem, assumenda voluptatum quod earum non consequuntur porro recusandae ab officiis voluptates eligendi impedit eius fuga veniam consectetur blanditiis commodi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque consequatur, cumque obcaecati explicabo et consequuntur eveniet voluptatem nisi nulla sunt! Expedita iure esse nulla suscipit doloribus ut corrupti veritatis animi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi vel veritatis voluptatum aliquid natus rerum impedit. Iure reprehenderit expedita eum ea at, mollitia, architecto odit distinctio nihil, pariatur consequuntur accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi nobis velit architecto itaque distinctio facilis rerum, voluptate atque aspernatur quod! Distinctio dolores architecto quae molestias at consequatur rerum cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, eius. Ipsum, corporis odio. Eum, nostrum provident, consequuntur inventore incidunt pariatur doloribus harum tempora illo optio sed reiciendis, accusamus quia odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolore odit maiores fuga neque saepe iste veniam, magni vero laborum illo dolorem quos aliquid ullam porro illum repudiandae doloribus incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, commodi! Hic quod quas dolore omnis enim reprehenderit minus. Hic vero nobis dolores, asperiores molestiae suscipit? Consectetur cum amet ducimus tenetur!</p>
+        <h2>VR-Prototyping</h2>
+        <p class="lead">Entwicklung einer VR-Applikation zur Evaluierung von Fahrzeugkonzepten</p>
+        <p>
+          Wenn von der Mobilität der Zukunft die Rede ist, wird häufig das Bild von autonomen, rein elektrisch betriebenen Fahrzeugen gezeichnet, die intelligent und vollständig vernetzt ihre Passagiere befördern. Sollen solch neuartigen Fahrzeugkonzepte angenommen werden, so muss deren Nutzerakzeptanz bereits in frühen Phasen der Fahrzeugentwicklung evaluiert werden.
+<br><br>
+VR-Prototyping ermöglicht es hierbei, Fahrzeugkonzepte samt ihres Funktionsumfangs detailgetreu sowie kostengünstig abzubilden. Damit VR-Applikationen intuitiv zu bedienen sind, sollte der Einsatz von Eingabegeräten wie Controllern möglichst vermieden werden. Im Rahmen der Masterthesis wurde daher ein VR-Konzept entwickelt, welches Storytelling in Verbindung mit Animationen nutzt, um Fahrzeugkonzepte samt ihres Funktionsumfangs immersiv zu kommunizieren. Hierbei kann der Nutzer das Fahrzeugkonzept mittels eines VR-Headsets betrachten, während die Funktionalitäten des Fahrzeuges anhand einer strukturierten Geschichte (Storytelling) emotionalisiert kommuniziert werden. 
+<br><br>
+Evaluierungsgegenstand der Arbeit war ein neuartiges Buskonzept, welches einen integrierten Transport von Personen sowie Gütern zur Optimierung der Fahrzeugauslastung ermöglichen soll. Zudem verwendet das Fahrzeugkonzept einen flexiblen Routing-Algorithmus, um während Betriebszeiten mit geringer Auslastung auch Passagiere außerhalb der fixen Route abholen zu können.  
+<br><br>
+Die VR-Applikation wurde zudem auf der Internationalen Automobil-Ausstellung (IAA) erprobt, wobei innerhalb von zwei Tagen über 100 Probanden das Fahrzeugkonzept begutachteten. Anschließend wurde mittels semistrukturierter Interviews die Haltung der Probanden gegenüber dem Fahrzeugkonzept erfasst, um dessen Entwicklung noch nutzerzentrierter gestalten zu können.
+
+        </p>
       </div>
       <div class="col-md-5">
-        <img class="img-fluid mx-auto" width="500" height="500" src="images\integrated_transport.png" alt="">
+        <img class="img-fluid mx-auto" width="500" height="500" src="images\integrated_transport.png" onclick="this.requestFullscreen()">
         <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
       </div>
     </div>
@@ -306,7 +326,7 @@
         <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img class="img-fluid mx-auto" width="500" height="500" src="images\ArchPad_new_1.jpg" alt="">
+        <img class="img-fluid mx-auto" width="500" height="500" src="images\ArchPad_new_1.jpg" onclick="this.requestFullscreen()">
       </div>
     </div>
 
@@ -319,7 +339,7 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci iure rem, assumenda voluptatum quod earum non consequuntur porro recusandae ab officiis voluptates eligendi impedit eius fuga veniam consectetur blanditiis commodi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque consequatur, cumque obcaecati explicabo et consequuntur eveniet voluptatem nisi nulla sunt! Expedita iure esse nulla suscipit doloribus ut corrupti veritatis animi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi vel veritatis voluptatum aliquid natus rerum impedit. Iure reprehenderit expedita eum ea at, mollitia, architecto odit distinctio nihil, pariatur consequuntur accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nisi nobis velit architecto itaque distinctio facilis rerum, voluptate atque aspernatur quod! Distinctio dolores architecto quae molestias at consequatur rerum cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, eius. Ipsum, corporis odio. Eum, nostrum provident, consequuntur inventore incidunt pariatur doloribus harum tempora illo optio sed reiciendis, accusamus quia odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolore odit maiores fuga neque saepe iste veniam, magni vero laborum illo dolorem quos aliquid ullam porro illum repudiandae doloribus incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, commodi! Hic quod quas dolore omnis enim reprehenderit minus. Hic vero nobis dolores, asperiores molestiae suscipit? Consectetur cum amet ducimus tenetur!</p>
       </div>
       <div class="col-md-5">
-        <img class="img-fluid mx-auto" width="500" height="500" src="images\ArchPad_new_1.jpg" alt="">
+        <img class="img-fluid mx-auto" width="500" height="500" src="images\Flux1.png" onclick="this.requestFullscreen()">
         <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
       </div>
     </div>
@@ -332,7 +352,7 @@
         <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img class="img-fluid mx-auto" width="500" height="500" src="images\ArchPad_new_1.jpg" alt="">
+        <img class="img-fluid mx-auto" width="500" height="500" src="images\AssemblX_1.png" onclick="this.requestFullscreen()">
       </div>
     </div>
 
